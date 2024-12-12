@@ -19,3 +19,23 @@ function moveCarousel() {
 
 // Avança automaticamente a cada 5 segundos
 setInterval(moveCarousel, 5000);
+const form = document.getElementById("form-contato");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Obter os dados do formulário
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const telefone = document.getElementById("telefone").value;
+    const voo = document.getElementById("voo").value;
+    const descricao = document.getElementById("descricao").value;
+
+    // Criar mensagem para o WhatsApp
+    const mensagem = `Olá, meu nome é ${nome}. Meu e-mail é ${email}, e meu telefone é ${telefone}.
+    Tive um problema no voo ${voo}. Descrição: ${descricao}.`;
+
+    // Redirecionar para o WhatsApp
+    const linkWhatsApp = `https://wa.me/5521980502332?text=${encodeURIComponent(mensagem)}`;
+    window.open(linkWhatsApp, "_blank");
+});
