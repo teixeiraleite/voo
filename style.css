@@ -1,0 +1,279 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo Geral */
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #F9F9F9;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background: linear-gradient(to right, #003366, #00509E);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  #hero .logo {
+    max-width: 200px;
+    margin: 0 auto 20px;
+  }
+  
+  #hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+  }
+  
+  #hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .cta-button, .whatsapp-button {
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .cta-button {
+    background-color: #FFC107;
+    color: #003366;
+  }
+  
+  .cta-button:hover {
+    background-color: #FFD54F;
+    transform: scale(1.05);
+  }
+  
+  .whatsapp-button {
+    background-color: #25D366;
+    color: white;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #1EBE57;
+    transform: scale(1.05);
+  }
+  
+  /* Benefícios */
+  #beneficios {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #beneficios h2 {
+    font-size: 2rem;
+    color: #003366;
+  }
+  
+  #beneficios ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #beneficios ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  /* Depoimentos */
+  #depoimentos {
+    background-color: #F4F4F4;
+    text-align: center;
+    padding: 50px 20px;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    animation: slide-continuous 20s linear infinite;
+  }
+  
+  .testimonial {
+    flex: 0 0 calc(50% - 20px);
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .stars {
+    font-size: 1.2rem;
+    color: #FFC107;
+    margin-top: 10px;
+  }
+  
+  /* Animação Contínua */
+  @keyframes slide-continuous {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .carousel-inner {
+    width: calc(100% * 4);
+  }
+  
+  /* FAQ */
+  #faq {
+    background-color: #FFFFFF;
+    text-align: left;
+    padding: 50px 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #faq h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 30px;
+  }
+  
+  #faq details {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    background-color: #F9F9F9;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #faq details summary {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #faq details summary:hover {
+    color: #00509E;
+  }
+  
+  #faq details p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Formulário */
+  #contato {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contato h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+  }
+  
+  form textarea {
+    height: 100px;
+  }
+  
+  form button {
+    display: block;
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #00224c;
+  }
+  
+  #contato .whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #contato .whatsapp-button:hover {
+    background-color: #1EBE57;
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+            
